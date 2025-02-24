@@ -14,11 +14,27 @@ body {
     padding-right: 15px;
     margin: 0 auto 0 auto;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 /* Стили хедера */
 .header {
     background-color: #ffffff;
-
-
+    padding-top: 24;
+    padding-bottom: 24;
+/* we dont need to write left and right side,
+only top and bottom, because container create all*/
 }
 .header a:hover,
 .header a:focus {
@@ -96,6 +112,14 @@ body {
     text-align: center;
     background-color: #2E2F42;
     color: #ffffff;
+    margin-bottom: 48px;
+}
+.yoursolution{
+    padding-top: 188px;
+    padding-bottom: 188px;
+    padding-left: 316px;
+    padding-right: 316px;
+
 }
 
 .business h1 {
@@ -103,6 +127,7 @@ body {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #ffffff;
+
 }
 
 .button-business {
@@ -128,6 +153,9 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-bottom: 8;
 }
 
 .advantages-text {
@@ -135,6 +163,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding-left: 156px;
+    padding-right: 156px;
 }
 
 /* Секция команды */
