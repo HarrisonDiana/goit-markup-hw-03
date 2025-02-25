@@ -95,11 +95,15 @@ margin-right: 76px;
     list-style: none;
 }
 
-.header .container{
+.header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
+    width: 100%; 
+    max-width: 1158px; 
+    margin: 0 auto; 
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .nav-header{
     display: flex;
@@ -205,6 +209,7 @@ margin-right: 76px;
 
 .advantages-item{
     list-style: none;
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .advantages-title {
@@ -357,7 +362,7 @@ padding: 120px 0;
     margin-bottom: 100px;
 }
 
-.logo-footer {
+.footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -370,7 +375,7 @@ padding: 120px 0;
     text-decoration: none;
 }
 
-.logo-footer-span {
+.footer-logo-span {
     color: #f4f4fd;
 }
 
