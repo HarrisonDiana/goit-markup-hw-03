@@ -28,11 +28,16 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+  .section{
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
 /* Стили хедера */
 .header {
     background-color: #ffffff;
     padding-top: 24;
     padding-bottom: 24;
+    padding-bottom: 1px solid #e7e9fc;
 /* we dont need to write left and right side,
 only top and bottom, because container create all*/
 }
@@ -52,6 +57,11 @@ only top and bottom, because container create all*/
     letter-spacing: 0.03em;
     color: #4D5AE5;
 }
+
+.header-logo{
+padding: 24px 0;
+margin-right: 76px;
+}
 .logo-text {
     color: #2E2F42;
     /* Цвет "Studio" */
@@ -69,11 +79,26 @@ only top and bottom, because container create all*/
 }
 
 /* Навигация */
+.headcont {
+    display: flex;
+    align-items: center;
+}
 .header-nav-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
     list-style: none;
-    
 }
 
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-header{
+    display: flex;
+    align-items: center;
+}
 .header-nav-item a {
     text-decoration: none;
     color: #2e2f42;
@@ -81,7 +106,15 @@ only top and bottom, because container create all*/
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
+.nav-link-item{
+    padding: 24px 0;
+    display: block;
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02;
+    color: #2e2f42;
+}
 .header-nav-item a:hover,
 .header-nav-item a:focus {
     color: #404bbf;
@@ -90,6 +123,10 @@ only top and bottom, because container create all*/
 /* Контакты */
 .contacts ul {
     list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
 }
 .contacts {
     font-style: normal;
@@ -139,6 +176,10 @@ only top and bottom, because container create all*/
     background-color: #4D5AE5;
     color: #ffffff;
     cursor: pointer;
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    boreder: none,
 }
 
 .button-business:hover,
@@ -153,9 +194,6 @@ only top and bottom, because container create all*/
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    padding-left: 156px;
-    padding-right: 156px;
-    margin-bottom: 8;
 }
 
 .advantages-text {
@@ -163,8 +201,13 @@ only top and bottom, because container create all*/
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    padding-left: 156px;
-    padding-right: 156px;
+    max-width: 264px;
+}
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    list-style: none;
 }
 
 /* Секция команды */
@@ -173,11 +216,16 @@ only top and bottom, because container create all*/
     background-color: #f4f4fd;
 }
 
-.team ul {
+.team-list {
     list-style: none;
+    display: flex;
+    gap: 24px;
+    padding-bottom: 120px;
+    padding-top: 232px;
 }
 .team-item {
     background-color: #FFFFFF;
+    
 }
 .team-section {
     font-size: 36px;
@@ -187,6 +235,8 @@ only top and bottom, because container create all*/
     text-transform: capitalize;
     color: #2E2F42;
     text-align: center;
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 .text-main {
     font-size: 20px;
@@ -204,23 +254,37 @@ only top and bottom, because container create all*/
 }
 
 /* Секция портфолио */
-.portfolio {
-    text-align: center;
+.portfolio ul {
+  padding: 0;
+  margin: 0;
 }
 
+.portfolio ul{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    width: 1128px;
+    height: 1000px;
+
+}
 .portfolio-title {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    text-align: center
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 72px;
 }
 
 .portfolio-list-item {
     background-color: #FFFFFF;
     text-align: center;
     list-style: none;
+    width: calc((100% - 48) / 3);
 }
 
 .portfolio-item-title {
@@ -237,14 +301,28 @@ only top and bottom, because container create all*/
     letter-spacing: 0.02em;
     color: #434455;
 }
+.portfolio-div{
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding: 32px 16px;
+}
 
 /* Footer */
 .footer {
     background-color: #2e2f42;
-    text-align: center;
     color: #f4f4fd;
+    width: 100%;
+    height: 312px;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px 0;
 }
-
+.footer-content{
+    max-width: 264px;
+    margin-left: 156px;
+    margin-bottom: 100px;
+}
 .footer .logo-footer {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -253,8 +331,12 @@ only top and bottom, because container create all*/
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: block;
+    margin-bottom: 16px;
 }
-
+.logo-footer{
+    text-decoration: none;
+}
 .logo-footer-span {
     color: #f4f4fd;
 }
