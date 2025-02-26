@@ -302,7 +302,6 @@ margin-right: 76px;
 }
 
 .portfolio {
-    text-align: center;
     padding-top: 72px !important;
     padding-bottom: 120px;
 
@@ -330,7 +329,6 @@ margin-right: 76px;
 
 .portfolio-list-item {
     background-color: #FFFFFF;
-    text-align: center;
     list-style: none;
     width: calc((100% - 48) / 3);
 }
