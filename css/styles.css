@@ -274,7 +274,6 @@ margin-right: 76px;
     text-transform: capitalize;
     color: #2E2F42;
     text-align: center;
-    margin-bottom: 24px;
 }
 
 .team-name {
@@ -298,12 +297,10 @@ margin-right: 76px;
 /* Секция портфолио */
 .portfolio ul {
     padding: 0;
-    margin: 0;
 }
 
 .portfolio {
-    padding-top: 72px !important;
-    padding-bottom: 120px;
+    padding: 120px 0;
 
 }
 
@@ -323,8 +320,8 @@ margin-right: 76px;
     text-transform: capitalize;
     color: #2e2f42;
     text-align: center;
-    margin-top: 0 !important;
-    margin-bottom: 24px !important;
+    margin-top: 0;
+    margin-bottom: 72px;
 }
 
 .portfolio-list-item {
@@ -339,7 +336,6 @@ margin-right: 76px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px;
 }
 
 .portfolio-item-text {
