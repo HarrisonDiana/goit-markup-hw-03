@@ -243,7 +243,8 @@ margin-right: 76px;
 .team {
     text-align: center;
     background-color: #f4f4fd;
-    padding: 120px 0;
+    padding-top: 72px;
+    padding-bottom: 120px;
 }
 
 .team-list {
@@ -252,7 +253,7 @@ margin-right: 76px;
     gap: 24px;
     padding-bottom: 120px;
     padding-top: 232px;
-    padding-left: 0;
+    padding: 0;
     margin: 0;
 }
 .team-item {
@@ -273,7 +274,7 @@ margin-right: 76px;
     text-transform: capitalize;
     color: #2E2F42;
     text-align: center;
-    margin-bottom: 72px;
+    margin-bottom: 24px;
 }
 
 .team-name {
@@ -296,12 +297,15 @@ margin-right: 76px;
 
 /* Секция портфолио */
 .portfolio ul {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .portfolio {
-padding: 120px 0;
+    text-align: center;
+    padding-top: 72px !important;
+    padding-bottom: 120px;
+
 }
 
 .portfolio ul{
@@ -320,8 +324,8 @@ padding: 120px 0;
     text-transform: capitalize;
     color: #2e2f42;
     text-align: center;
-    justify-content: center;
-    margin-bottom: 72px;
+    margin-top: 0 !important;
+    margin-bottom: 24px !important;
 }
 
 .portfolio-list-item {
@@ -351,6 +355,11 @@ padding: 120px 0;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
     padding: 32px 16px;
+}
+.portfolio .container {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0 auto;
 }
 
 /* Footer */
