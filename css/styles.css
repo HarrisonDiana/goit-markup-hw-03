@@ -33,10 +33,7 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.section{
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
+
 /* Стили хедера */
 .header {
     background-color: #ffffff;
@@ -336,6 +333,7 @@ margin-right: 76px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .portfolio-item-text {
